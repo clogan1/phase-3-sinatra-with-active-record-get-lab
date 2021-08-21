@@ -63,7 +63,7 @@ describe ApplicationController do
     it 'returns the single most expensive baked good as JSON (HINT: how can you sort the baked goods in a particular order?)' do
       get "/baked_goods/most_expensive"
 
-      expect(last_response.body).to include_json({ name: "Croissant", price: 5 })
+      expect(last_response.body).to include_json({ name: "Black and White Cookie", price: 5 })
     end
   end
 
